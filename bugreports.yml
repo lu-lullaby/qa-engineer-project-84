@@ -1,6 +1,6 @@
 ---
 - summary: |
-    Не корректно работает поиск товара по категории "groceries"
+    Не корректно работает поиск товара по категориям "home-decoration", "kitchen-accessories"
   environment: |
     Google Chrome   132.0.6834.160 (Официальная сборка), (64 бит)
     Windiws 10
@@ -10,9 +10,9 @@
     3. Нажать на кнопку "Следующая" (подразумевается страница)
     4. Нажать на кнопку "Категория"
   expected-result: |
-    При выборе категории "groceries", при следующем нажатии на "Категории" должны отображаться подкатегории "home-decoration", "kitchen-accessories"
+    При выборе категорий, отображаются все категории товаров магазина
   actual-result: |
-    Некорректно отображаются подкатегории "home-decoration", "kitchen-accessories" в категории "groseries"
+    Некорректно отображаются категории "home-decoration" и "kitchen-accessories"
 
 - summary: |
     При выборе конкретной категории товаров, отсутствует возможность выбора "Без категорий"
@@ -96,7 +96,7 @@ steps-to-reproduce: |
 - summary: |
     Сайт не работает в последней версии браузера "Яндекс Браузер" (BrowserStack)
   environment: |
-    Яндекс Браузер   24.10.4.753
+    Яндекс Браузер   14.12
     Windiws 10
   precondition
     Открыт BrowserStack, выбран Яндекс Браузер последней версии
@@ -108,12 +108,24 @@ steps-to-reproduce: |
 - summary: |
     Сайт не работает в последней версии браузера "Safari" (BrowserStack)
   environment: |
-    Safari   5.1.7
+    Safari   5.1
     Windiws 10
   precondition
     Открыт BrowserStack, выбран браузер "Safari" последней версии
   expected-result: |
     Сайт корректно отображается в последней версии браузера "Safari"
+  actual-result: |
+    Сайт не отображается
+
+- summary: |
+    Сайт не работает в последней версии браузера "Internet Explorer" (BrowserStack)
+  environment: |
+    Safari   11
+    Windiws 10
+  precondition
+    Открыт BrowserStack, выбран браузер "Internet Explorer" последней версии
+  expected-result: |
+    Сайт корректно отображается в последней версии браузера "Internet Explorer"
   actual-result: |
     Сайт не отображается
 
@@ -136,7 +148,7 @@ steps-to-reproduce: |
     Google Chrome   132.0.6834.160 (Официальная сборка), (64 бит)
     Windiws 10
   steps-to-reproduce: |
-    1. Ввести максимальную цену товара - 1
+    1. Ввести в поле максимальной цены товара число "-1"
   expected-result: |
     Ввод отрицательных чисел в поле ввода макисмальной цены товара невозможен
   actual-result: |
