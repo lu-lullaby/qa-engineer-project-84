@@ -104,38 +104,17 @@
     Сайт магазитна отображается некорректно в мобильной версии магазина
 
 - summary: |
-    Сайт не работает в последней версии браузера "Яндекс Браузер" (BrowserStack)
+    Сайт не работает в последней версии браузеров "Яндекс Браузер", "Safari", "Internet Explorer" (BrowserStack)
   environment: |
     Яндекс Браузер   14.12
-    Windiws 10
-  precondition: |
-    Открыт BrowserStack, выбран Яндекс Браузер последней версии
-  expected-result: |
-    Сайт корректно отображается в последней версии "Яндекс Браузер"
-  actual-result: |
-    Сайт не отображается
-
-- summary: |
-    Сайт не работает в последней версии браузера "Safari" (BrowserStack)
-  environment: |
     Safari   5.1
+    Internet Explorer   11
     Windiws 10
-  precondition: |
-    Открыт BrowserStack, выбран браузер "Safari" последней версии
+  steps-to-reproduce: |
+    1. Вставить ссылку https://products-store-git-v2bugfixes-hexlet-components.vercel.app/ в поисковую строку последней версии браузера
+    2. Нажать Enter
   expected-result: |
-    Сайт корректно отображается в последней версии браузера "Safari"
-  actual-result: |
-    Сайт не отображается
-
-- summary: |
-    Сайт не работает в последней версии браузера "Internet Explorer" (BrowserStack)
-  environment: |
-    Safari   11
-    Windiws 10
-  precondition: |
-    Открыт BrowserStack, выбран браузер "Internet Explorer" последней версии
-  expected-result: |
-    Сайт корректно отображается в последней версии браузера "Internet Explorer"
+    Сайт корректно отображается в последней версии браузера
   actual-result: |
     Сайт не отображается
 
