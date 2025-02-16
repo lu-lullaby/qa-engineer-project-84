@@ -163,6 +163,9 @@ bugreports:
   environment: |
     Яндекс Браузер   14.12
     Windiws 10
+  steps-to-reproduce: |
+    1. Вставить ссылку https://products-store-git-v2bugfixes-hexlet-components.vercel.app/ в поисковую строку последней версии "Яндекс Браузер"
+    2. Нажать Enter
   expected-result: |
     Сайт корректно отображается в последней версии "Яндекс Браузер"
   actual-result: |
@@ -173,6 +176,9 @@ bugreports:
   environment: |
     Safari   5.1
     Windiws 10
+  steps-to-reproduce: |
+    1. Вставить ссылку https://products-store-git-v2bugfixes-hexlet-components.vercel.app/ в поисковую строку последней версии "Safari"
+    2. Нажать Enter
   expected-result: |
     Сайт корректно отображается в последней версии браузера "Safari"
   actual-result: |
@@ -183,6 +189,9 @@ bugreports:
   environment: |
     Internet Explorer   11
     Windiws 10
+  steps-to-reproduce: |
+    1. Вставить ссылку https://products-store-git-v2bugfixes-hexlet-components.vercel.app/ в поисковую строку последней версии "Internet Explorer"
+    2. Нажать Enter
   expected-result: |
     Сайт корректно отображается в последней версии браузера "Internet Explorer"
   actual-result: |
