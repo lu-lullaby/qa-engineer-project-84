@@ -45,8 +45,7 @@
   prerequisites: |
     no data
   test-data: |
-    Nail Couture
-    Knoll
+    no data
   steps:
     - Выбираем чекбокс Nail Couture
     - Выбираем чекбокс Knoll
@@ -58,9 +57,9 @@
   requirement: |
     При нажатии на конкретный товар открывается подробная информация о товаре
   prerequisites: |
-    no-data
+    no data
   test data: |
-    Товар Apple
+    no data
   steps:
     - Нажимаем на товар Apple
   expected-result: |
@@ -73,17 +72,11 @@
   prerequisites: |
     no data
   test-data: |
-    Товар Essence Mascara Lash Princess
-    Товар Dior J'adore
-    Товар Bedside Table African Cherry
-    Товар Beef Steak
+    no data
   steps:
-    - Нажимаем на кнопку "В корзину" товара Essence Mascara Lash Princess
-    - Нажимаем на кнопку "В корзину" товара Dior J'adore
-    - Нажимаем на кнопку "В корзину" товара Bedside Table African Cherry
-    - Нажимаем на кнопку "В корзину" товара Beef Steak
+    - Нажимаем на кнопку "В корзину" необходимого товара
   expected-result: |
-    В шапке сайта у кнопки "Корзина" отображается число 4 - количество добавленных товаров
+    В шапке сайта у кнопки "Корзина" отображается число - количество добавленных товаров
 
 - summary: |
     Проверка юзабилити добавления товара в корзину
@@ -92,15 +85,9 @@
   prerequisites: |
     no data
   test-data: |
-    Товар Essence Mascara Lash Princess
-    Товар Dior J'adore
-    Товар Bedside Table African Cherry
-    Товар Beef Steak
+    no data
   steps:
-    - Нажимаем на кнопку "В корзину" товара Essence Mascara Lash Princess
-    - Нажимаем на кнопку "В корзину" товара Dior J'adore
-    - Нажимаем на кнопку "В корзину" товара Bedside Table African Cherry
-    - Нажимаем на кнопку "В корзину" товара Beef Steak
+    - Нажимаем на кнопку "В корзину" необходимого товара
   expected-result: |
     На карточке товара происходят визуально понятные пользователю изменения 
 
