@@ -60,7 +60,7 @@
   environment: |
     Google Chrome   132.0.6834.160 (Официальная сборка), (64 бит)
     Windiws 10
-  precondition
+  precondition: |
     Открыты инструменты разработчика в браузере, вкладка Network (Fetch/XHR)
   steps-to-reproduce: |
     1. Добавить любой товар в корзину
