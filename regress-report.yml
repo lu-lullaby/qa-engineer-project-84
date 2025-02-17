@@ -53,10 +53,6 @@ test-cases:
   status: fail
 
 - summary: |
-    Проверка доступности сайта магазина на различных устройствах
-  status: pass
-
-- summary: |
     Проверка фильтрации товара по цене
   status: fail
 
