@@ -6,7 +6,7 @@
   prerequisites: |
     no data
   test-data: |
-    Cat food
+    no data
   steps:
     - Вводим в строку поиска товара ключевое слово, например, Cat food
   expected-result: |
