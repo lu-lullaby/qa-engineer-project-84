@@ -49,7 +49,7 @@ test-cases:
   status: pass
 
 - summary: |
-    Проверка совместимости сайта магазина с последними версиями браузеров
+    Проверка совместимости сайта магазина с последними версиями браузеров Microsoft Edge, Internet Explorer, Mozilla Firefox, Google Chrome, Opera, Safari
   status: fail
 
 - summary: |
